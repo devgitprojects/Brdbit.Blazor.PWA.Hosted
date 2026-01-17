@@ -1,0 +1,72 @@
+﻿.update-available-container {
+    z-index: 8;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px 15px 7px;
+    color: #fff;
+    background: #1b6ec2;
+}
+
+.update-available-container-position-size {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 56px;
+}
+
+.update-button-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin: -5px;
+    padding: 0;
+    list-style: none;
+}
+
+.update-button-container > li {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin: 5px;
+}
+
+.update-container-right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.update-container-left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+.update-available-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    white-space: pre-wrap;
+}
+
+.small-app-version-bottom-right {
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    right: 1.5rem;
+    font-size: 50%;
+    font-weight: 400
+}

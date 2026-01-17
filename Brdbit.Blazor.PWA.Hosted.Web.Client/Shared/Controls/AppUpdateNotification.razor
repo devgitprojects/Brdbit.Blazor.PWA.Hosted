@@ -1,0 +1,14 @@
+﻿<div style="@(IsUpdateReady ? "" : "display: none;") @Style" class="@CssClass">
+    <div class="@CssClassText">@((MarkupString)string.Format(UpdateAvailableText, newServiceWorkerCacheVersion))</div>
+    <ul id="btnServiceWorkerUpdate" class="update-container-right update-button-container">
+        <li>
+            <button style="" class="@CssClassButton" type="button">
+                <span class="update-button-text">@UpdateButtonText</span>
+            </button>
+        </li>
+    </ul>
+</div>
+
+<span id="currentSWversionLabel" style="@StyleCurrentVersionLabel" class="@CssClassAppVersionLabel">@currentServiceWorkerVersion</span>
+
+

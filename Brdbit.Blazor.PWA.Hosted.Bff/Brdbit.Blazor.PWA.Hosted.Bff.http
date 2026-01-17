@@ -1,0 +1,6 @@
+@Brdbit.Blazor.PWA.Hosted.Bff_HostAddress = http://localhost:5118
+
+GET {{Brdbit.Blazor.PWA.Hosted.Bff_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
