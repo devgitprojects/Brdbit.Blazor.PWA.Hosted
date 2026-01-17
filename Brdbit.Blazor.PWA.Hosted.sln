@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brdbit.Blazor.PWA.Hosted.Bf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brdbit.Blazor.PWA.Hosted.Shared", "Brdbit.Blazor.PWA.Hosted.Shared\Brdbit.Blazor.PWA.Hosted.Shared.csproj", "{4C7F7C74-52FE-45CB-9B0D-6E8DB89B5B11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brdbit.Blazor.PWA.Hosted.Template", "Brdbit.Blazor.PWA.Hosted.Template\Brdbit.Blazor.PWA.Hosted.Template.csproj", "{818DBA9B-D948-410C-9554-8119562DD6E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4C7F7C74-52FE-45CB-9B0D-6E8DB89B5B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C7F7C74-52FE-45CB-9B0D-6E8DB89B5B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C7F7C74-52FE-45CB-9B0D-6E8DB89B5B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818DBA9B-D948-410C-9554-8119562DD6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818DBA9B-D948-410C-9554-8119562DD6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818DBA9B-D948-410C-9554-8119562DD6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818DBA9B-D948-410C-9554-8119562DD6E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
