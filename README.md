@@ -15,15 +15,23 @@ The solution consists of:
 
 - **Blazor WebAssembly Client (PWA)**  
   Includes a Web App Manifest and a custom Service Worker with update detection.
+  
+- **Shared library**  
+	Contains shared contracts, DTOs, and common code used by both client and server.
+	
+- **VSIX project**  
+  Contains everything required to build a Visual Studio extension (VSIX) that installs this solution as a reusable multi-project template.
 
 ```
 Solution
  ├─ Bff (ASP.NET Core host)
- │   └─ Api, PWA host, can act as a BFF (Backend-for-Frontend)
+ │   └─ API, PWA host, BFF responsibilities
  ├─ Web.Client (Blazor WebAssembly)
  │   └─ UI, PWA assets, Service Worker
- └─ Shared (optional)
-     └─ Common contracts / DTOs
+ ├─ Shared
+ │   └─ Common contracts / DTOs
+ └─ Vsix
+     └─ Visual Studio template packaging
 ```
 
 ## Service Worker
@@ -79,3 +87,29 @@ Keep `CACHE_VERSION` aligned with:
 - Application version
 - Release tag
 - Version shown to users
+
+### Visual Studio Template (VSIX)
+
+This solution includes a Visual Studio Solution Template packaged as a VSIX extension.
+
+The VSIX allows developers to create the same multi-project Blazor PWA Hosted solution directly from Visual Studio using File → New → Project, without manually copying or configuring projects.
+
+## What the template creates
+
+When a new project is created from this template, Visual Studio generates:
+
+```
+<YourSolutionName>
+ ├─ <YourSolutionName>.Bff
+ ├─ <YourSolutionName>.Web.Client
+ └─ <YourSolutionName>.Shared
+```
+
+## Install VSIX from source (for contributors)
+
+	1. Open the VSIX project in Visual Studio
+	2. Build the solution
+	3. Locate the generated .vsix file in the output folder
+	4. Double-click it
+	5. Follow the Visual Studio Extension Installer
+	6. Restart Visual Studio
